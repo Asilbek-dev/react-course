@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+  body .header {
+    background-color: #032541;
+    width: 100%;
+    height: 32px;
+    padding: 1rem;
+    display: flex; }
+    body .header .headerleft {
+      margin-left: 150px;
+      display: flex;
+      align-items: center; }
+      body .header .headerleft a {
+        color: white;
+        text-decoration: none;
+        margin-right: 30px; }
+        body .header .headerleft a img {
+          width: 140px;
+          height: 20px; }
+      body .header .headerleft .menu1 {
+        display: block; }
+        body .header .headerleft .menu1 a {
+          color: white;
+          text-decoration: none;
+          margin-right: 30px; }
+        body .header .headerleft .menu1 a:hover + .box {
+          display: block; }
+        body .header .headerleft .menu1 .box {
+          display: none;
+          background-color: white;
+          border-radius: 4px;
+          padding: 1rem 2rem;
+          position: absolute; }
+    body .header .headerright {
+      display: flex;
+      align-items: center;
+      margin-left: 380px; }
+      body .header .headerright i {
+        color: white;
+        width: 20px;
+        height: 20px;
+        margin-left: 30px;
+        cursor: pointer; }
+      body .header .headerright a {
+        color: white;
+        text-decoration: none;
+        margin-left: 30px; }
+      body .header .headerright .click {
+        width: 20px;
+        height: 20px;
+        border: 0.5px solid white;
+        padding: 6px;
+        color: white;
+        margin-left: 30px;
+        border-radius: 6px;
+        text-align: center;
+        cursor: pointer; }
+      body .header .headerright .click:hover {
+        background-color: white;
+        color: black; }
+      body .header .headerright .fa-search {
+        color: #22BAD6; }
+  body .main {
+    background-image: url(./image/back1.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; }
+  body .text h1 {
+    margin-top: -200px;
+    margin-left: 100px; }
+
+/*# sourceMappingURL=main.css.map */
