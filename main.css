@@ -19,20 +19,22 @@ body {
         body .header .headerleft a img {
           width: 140px;
           height: 20px; }
-      body .header .headerleft .menu1 {
-        display: block; }
-        body .header .headerleft .menu1 a {
-          color: white;
-          text-decoration: none;
-          margin-right: 30px; }
-        body .header .headerleft .menu1 a:hover + .box {
+      body .header .headerleft .menu1 li {
+        list-style-type: none; }
+        body .header .headerleft .menu1 li:hover .box {
           display: block; }
-        body .header .headerleft .menu1 .box {
-          display: none;
-          background-color: white;
-          border-radius: 4px;
-          padding: 1rem 2rem;
-          position: absolute; }
+        body .header .headerleft .menu1 li .box li:hover {
+          background: #dfdbdb; }
+      body .header .headerleft .menu1 .box {
+        display: none;
+        background-color: white;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        position: absolute;
+        cursor: pointer; }
+        body .header .headerleft .menu1 .box li a {
+          list-style: none;
+          color: black; }
     body .header .headerright {
       display: flex;
       align-items: center;
@@ -63,13 +65,130 @@ body {
       body .header .headerright .fa-search {
         color: #22BAD6; }
   body .main {
-    background-image: url(./image/back1.jpg);
+    background-image: url(./image/back2.jpeg);
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%; }
   body .text h1 {
     margin-top: -200px;
-    margin-left: 100px; }
+    margin-left: 180px;
+    color: white; }
+  body .text h2 {
+    color: white;
+    margin-left: 180px; }
+  body .text .search {
+    width: 74%;
+    margin-left: 180px;
+    position: absolute;
+    box-sizing: border-box; }
+    body .text .search input {
+      width: 100%;
+      height: 35px;
+      font-size: 16px;
+      border-radius: 26px;
+      outline: none;
+      border: none;
+      padding: 6px 20px;
+      color: #7F7F7F; }
+  body .text .search2 {
+    position: absolute;
+    margin-left: 1266px; }
+    body .text .search2 button {
+      width: 100%;
+      height: 47px;
+      font-size: 16px;
+      border-radius: 26px;
+      outline: none;
+      border: none;
+      background-color: #68C7B5;
+      padding: 6px 20px;
+      cursor: pointer;
+      color: white; }
+    body .text .search2 button:hover {
+      color: black; }
+  body .cardheader {
+    display: flex;
+    margin-top: 140px;
+    align-items: center; }
+    body .cardheader h1 {
+      font-size: 26px;
+      margin-left: 180px;
+      margin-right: 30px; }
+    body .cardheader .click {
+      border: 0.5px solid black;
+      border-radius: 20px;
+      width: 154px; }
+      body .cardheader .click button {
+        margin-right: -4px;
+        outline: none;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 20px;
+        background: none;
+        color: #13a375;
+        cursor: pointer; }
+      body .cardheader .click .now {
+        background-color: #032541; }
+      body .cardheader .click button:focus {
+        background-color: #032541; }
+        body .cardheader .click button:focus .now {
+          display: none; }
+  body .cardbody {
+    display: flex;
+    justify-content: flex-start; }
+    body .cardbody .card {
+      width: 220px;
+      height: 300px;
+      border-radius: 6px;
+      margin-left: 180px;
+      cursor: pointer; }
+      body .cardbody .card img {
+        border-radius: 6px; }
+    body .cardbody ul li {
+      list-style: none; }
+      body .cardbody ul li button {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        margin-left: -90px;
+        margin-top: 0px;
+        background-color: #A1A1A7;
+        border: none;
+        outline: none; }
+        body .cardbody ul li button:hover {
+          background-color: #1CB9D9; }
+      body .cardbody ul li .box {
+        display: none;
+        border: 0.5px solid #e2dddd;
+        background-color: white;
+        width: 250px;
+        border-radius: 6px;
+        margin-left: -280px; }
+        body .cardbody ul li .box li {
+          list-style: none; }
+          body .cardbody ul li .box li a {
+            text-decoration: none; }
+            body .cardbody ul li .box li a:hover {
+              background-color: #032541;
+              color: white; }
+      body .cardbody ul li:hover .box {
+        display: block; }
+    body .cardbody div.scrollmenu {
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap; }
+    body .cardbody div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none; }
+    body .cardbody div.scrollmenu a:hover {
+      background-color: #777; }
 
 /*# sourceMappingURL=main.css.map */
